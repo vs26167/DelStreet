@@ -1,0 +1,5 @@
+C:\Users\Vikas\Desktop\DelStreet\ModelMapper\bin\Debug\ModelMapper.dll
+C:\Users\Vikas\Desktop\DelStreet\ModelMapper\bin\Debug\ModelMapper.pdb
+C:\Users\Vikas\Desktop\DelStreet\ModelMapper\obj\Debug\ModelMapper.csprojResolveAssemblyReference.cache
+C:\Users\Vikas\Desktop\DelStreet\ModelMapper\obj\Debug\ModelMapper.dll
+C:\Users\Vikas\Desktop\DelStreet\ModelMapper\obj\Debug\ModelMapper.pdb

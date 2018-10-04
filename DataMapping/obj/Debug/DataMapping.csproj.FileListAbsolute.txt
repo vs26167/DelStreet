@@ -1,0 +1,5 @@
+C:\Users\Vikas\Desktop\DelStreet\DataMapping\bin\Debug\DataMapping.dll
+C:\Users\Vikas\Desktop\DelStreet\DataMapping\bin\Debug\DataMapping.pdb
+C:\Users\Vikas\Desktop\DelStreet\DataMapping\obj\Debug\DataMapping.csprojResolveAssemblyReference.cache
+C:\Users\Vikas\Desktop\DelStreet\DataMapping\obj\Debug\DataMapping.dll
+C:\Users\Vikas\Desktop\DelStreet\DataMapping\obj\Debug\DataMapping.pdb

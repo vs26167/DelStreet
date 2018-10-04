@@ -1,0 +1,5 @@
+C:\Users\Vikas\Desktop\DelStreet\EFRepository\bin\Debug\EFRepository.dll
+C:\Users\Vikas\Desktop\DelStreet\EFRepository\bin\Debug\EFRepository.pdb
+C:\Users\Vikas\Desktop\DelStreet\EFRepository\obj\Debug\EFRepository.csprojResolveAssemblyReference.cache
+C:\Users\Vikas\Desktop\DelStreet\EFRepository\obj\Debug\EFRepository.dll
+C:\Users\Vikas\Desktop\DelStreet\EFRepository\obj\Debug\EFRepository.pdb
