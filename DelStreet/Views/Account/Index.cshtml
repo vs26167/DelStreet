@@ -1,11 +1,61 @@
-﻿@model ModelMapper.AccountModel
+﻿@model ModelMapper.UserModel
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "OTPGenrate";
 }
+<style>
+    .hiddenDiv {
+        display: none !important;
+    }
+</style>
+<h2></h2>
+<br />
+@using (Ajax.BeginForm("GetOTP", "Account", null, new AjaxOptions { OnSuccess = "SuccessSubmit", OnFailure = "ErrorSubmit" }, new { enctype = "multipart/form-data", @class = "form-horizontal form-groups-bordered chkDertyForm", id = "frmGetOTP", role = "form" }))
+{ <div class="row p-b-10">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Enter Mobile Number</label>
+                @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+            </div>
+        </div>
+    </div>
+    <div class="row p-b-10 hiddenDiv" id="otpDiv">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Enter OTP</label>
+                @Html.TextBoxFor(m => m.OTP, new { @class = "form-control" })
+            </div>
+        </div>
+    </div>
+                        <button class="btn blue_btn" id="btnGetOTP" onclick="GetOTP()" type="button">Get OTP</button>
+}
+            <script>
+                function GetOTP() {
 
+                    debugger;
+                    var phoneNumber = $("#PhoneNumber").val();
+                    var otp = $("#OTP").val();
+                    $.ajax({
+                        url: "http://localhost:53515/Account/GetOTP",
+                        cache: false,
+                        type: 'GET',
+                        contentType: 'application/json; charset=utf-8',
+                        data: { phoneNumber: phoneNumber, otp: otp },
+                        dataType: "json",
+                        async: false,
+                        success: function (data) {
+                            debugger;
+                            if (data.isLogin) {
+                                window.location.href = "http://localhost:53515/Account/SinUp";
+                            }
+                            else
+                            {
+                                $("#otpDiv").removeClass("hiddenDiv")
+                                $("#btnGetOTP").html("Submit")
+                            }
+                        }
+                    });
+                }
+                function SuccessSubmit() {
 
-
-<label  class="col-sm-4 control-label">Enter Otp</label>
-@Html.TextBoxFor(m => m.OTPNumber)
-
-
+                }
+            </script>

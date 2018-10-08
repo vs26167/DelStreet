@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\FairwaterGit\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +43,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="EfRepository.cs" />
+    <Compile Include="GUnitOfWork.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="IRepository\IAccountRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AccountRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataMapping\DataMapping.csproj">
+      <Project>{4e25c182-26ae-4d94-89e6-2367db74006b}</Project>
+      <Name>DataMapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModelMapper\ModelMapper.csproj">
+      <Project>{4f7775b4-1daf-4e38-8b7a-d790153ebeac}</Project>
+      <Name>ModelMapper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

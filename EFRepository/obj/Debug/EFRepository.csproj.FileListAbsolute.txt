@@ -3,3 +3,14 @@ C:\Users\Vikas\Desktop\DelStreet\EFRepository\bin\Debug\EFRepository.pdb
 C:\Users\Vikas\Desktop\DelStreet\EFRepository\obj\Debug\EFRepository.csprojResolveAssemblyReference.cache
 C:\Users\Vikas\Desktop\DelStreet\EFRepository\obj\Debug\EFRepository.dll
 C:\Users\Vikas\Desktop\DelStreet\EFRepository\obj\Debug\EFRepository.pdb
+F:\DelStreet\EFRepository\obj\Debug\EFRepository.csprojResolveAssemblyReference.cache
+F:\DelStreet\EFRepository\obj\Debug\EFRepository.dll
+F:\DelStreet\EFRepository\obj\Debug\EFRepository.pdb
+F:\DelStreet\EFRepository\bin\Debug\EFRepository.dll
+F:\DelStreet\EFRepository\bin\Debug\EFRepository.pdb
+F:\DelStreet\EFRepository\bin\Debug\DataMapping.dll
+F:\DelStreet\EFRepository\bin\Debug\EntityFramework.dll
+F:\DelStreet\EFRepository\bin\Debug\DataMapping.pdb
+F:\DelStreet\EFRepository\bin\Debug\EntityFramework.xml
+F:\DelStreet\EFRepository\bin\Debug\ModelMapper.dll
+F:\DelStreet\EFRepository\bin\Debug\ModelMapper.pdb

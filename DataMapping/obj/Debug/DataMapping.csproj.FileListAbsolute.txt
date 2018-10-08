@@ -3,3 +3,13 @@ C:\Users\Vikas\Desktop\DelStreet\DataMapping\bin\Debug\DataMapping.pdb
 C:\Users\Vikas\Desktop\DelStreet\DataMapping\obj\Debug\DataMapping.csprojResolveAssemblyReference.cache
 C:\Users\Vikas\Desktop\DelStreet\DataMapping\obj\Debug\DataMapping.dll
 C:\Users\Vikas\Desktop\DelStreet\DataMapping\obj\Debug\DataMapping.pdb
+F:\DelStreet\DataMapping\bin\Debug\DataMapping.dll.config
+F:\DelStreet\DataMapping\bin\Debug\DataMapping.dll
+F:\DelStreet\DataMapping\bin\Debug\DataMapping.pdb
+F:\DelStreet\DataMapping\bin\Debug\EntityFramework.dll
+F:\DelStreet\DataMapping\bin\Debug\EntityFramework.SqlServer.dll
+F:\DelStreet\DataMapping\bin\Debug\EntityFramework.xml
+F:\DelStreet\DataMapping\bin\Debug\EntityFramework.SqlServer.xml
+F:\DelStreet\DataMapping\obj\Debug\DataMapping.csprojResolveAssemblyReference.cache
+F:\DelStreet\DataMapping\obj\Debug\DataMapping.dll
+F:\DelStreet\DataMapping\obj\Debug\DataMapping.pdb

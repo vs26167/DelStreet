@@ -2,3 +2,16 @@ C:\Users\Vikas\Desktop\DelStreet\BussinessManager\bin\Debug\BussinessManager.dll
 C:\Users\Vikas\Desktop\DelStreet\BussinessManager\bin\Debug\BussinessManager.pdb
 C:\Users\Vikas\Desktop\DelStreet\BussinessManager\obj\Debug\BussinessManager.dll
 C:\Users\Vikas\Desktop\DelStreet\BussinessManager\obj\Debug\BussinessManager.pdb
+F:\DelStreet\BussinessManager\bin\Debug\BussinessManager.dll
+F:\DelStreet\BussinessManager\bin\Debug\BussinessManager.pdb
+F:\DelStreet\BussinessManager\obj\Debug\BussinessManager.csprojResolveAssemblyReference.cache
+F:\DelStreet\BussinessManager\obj\Debug\BussinessManager.dll
+F:\DelStreet\BussinessManager\obj\Debug\BussinessManager.pdb
+F:\DelStreet\BussinessManager\bin\Debug\EFRepository.dll
+F:\DelStreet\BussinessManager\bin\Debug\ModelMapper.dll
+F:\DelStreet\BussinessManager\bin\Debug\EntityFramework.dll
+F:\DelStreet\BussinessManager\bin\Debug\DataMapping.dll
+F:\DelStreet\BussinessManager\bin\Debug\EFRepository.pdb
+F:\DelStreet\BussinessManager\bin\Debug\ModelMapper.pdb
+F:\DelStreet\BussinessManager\bin\Debug\EntityFramework.xml
+F:\DelStreet\BussinessManager\bin\Debug\DataMapping.pdb
