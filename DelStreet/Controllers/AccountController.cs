@@ -19,37 +19,40 @@ using ModelMapper;
 
 namespace Fairwater.UI.Controllers
 {
-   
+
     public class AccountController : Controller
     {
         #region Fields
 
         // Object declaration. 
-         private readonly IAccountService _IAccountService;
-      
+        private readonly IAccountService _IAccountService;
+
 
         #endregion
 
         #region DI
 
-         public AccountController(IAccountService _IAccountService)
+        public AccountController(IAccountService _IAccountService)
         {
             this._IAccountService = _IAccountService;
-           
+
         }
         #endregion
-
+        public ActionResult Login()
+        {
+            return View();
+        }
         public ActionResult Index()
         {
             return View();
         }
         [HttpGet]
-        public JsonResult GetOTP(string phoneNumber,string otp)
+        public JsonResult GetOTP(string phoneNumber, string otp)
         {
             //Generate RandomNo
             UserModel model = new UserModel();
             bool isLogin = false;
-            if(string.IsNullOrEmpty(otp))
+            if (string.IsNullOrEmpty(otp))
             {
                 var user = _IAccountService.GetUserDetailByPhoneNumber(phoneNumber).FirstOrDefault();
                 if (user == null)
@@ -80,7 +83,7 @@ namespace Fairwater.UI.Controllers
             else
             {
                 var user = _IAccountService.GetUserDetailByPhoneNumber(phoneNumber).FirstOrDefault();
-                if(user.OTP==otp)
+                if (user.OTP == otp)
                 {
                     isLogin = true;
 
@@ -91,9 +94,29 @@ namespace Fairwater.UI.Controllers
                 }
             }
 
-            return Json(new { isLogin = isLogin }, JsonRequestBehavior.AllowGet);
+            return Json(new { isLogin = isLogin, phoneNumber = phoneNumber }, JsonRequestBehavior.AllowGet);
         }
-        public ActionResult SinUp()
+        public ActionResult SinUp(string phoneNumber)
+        {
+            UserModel userModel = new UserModel();
+            userModel.PhoneNumber = phoneNumber;
+            return View(userModel);
+        }
+        [HttpPost]
+        public ActionResult SinUp(UserModel userModel)
+        {
+
+            var user = _IAccountService.GetUserDetailByPhoneNumber(userModel.PhoneNumber).FirstOrDefault();
+            user.OTP = user.OTP;
+            user.UserName = userModel.UserName;
+            user.FirstName = userModel.FirstName;
+            user.LastName = userModel.LastName;
+            user.Password = userModel.Password;
+            user.Email = userModel.Email;
+            _IAccountService.UpdateUserDetail(user);
+            return Json(new { isStatus=true }, JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult DashBoard()
         {
             return View();
         }

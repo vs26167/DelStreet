@@ -45,7 +45,8 @@
                         success: function (data) {
                             debugger;
                             if (data.isLogin) {
-                                window.location.href = "http://localhost:53515/Account/SinUp";
+                                
+                                window.location.href = "http://localhost:53515/Account/SinUp?phoneNumber=" + data.phoneNumber;
                             }
                             else
                             {
