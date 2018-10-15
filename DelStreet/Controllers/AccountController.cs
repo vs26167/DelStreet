@@ -15,11 +15,12 @@ using System.Globalization;
 using System.Threading;
 using BussinessManager.IService;
 using ModelMapper;
+using Fairwater.UI.Filters;
 
 
 namespace Fairwater.UI.Controllers
 {
-
+  
     public class AccountController : Controller
     {
         #region Fields
@@ -38,8 +39,13 @@ namespace Fairwater.UI.Controllers
 
         }
         #endregion
-        public ActionResult Login()
+        [AllowAnonymous]
+        [OutputCache(NoStore = true, Duration = 0, VaryByParam = "None")]
+        public ActionResult Login(string returnUrl)
         {
+            if (User.Identity.IsAuthenticated)
+            {
+            }
             return View();
         }
         public ActionResult Index()
@@ -119,6 +125,20 @@ namespace Fairwater.UI.Controllers
         public ActionResult DashBoard()
         {
             return View();
+        }
+        [HttpPost]
+        
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        [ValidateInput(false)]
+        public ActionResult Login(UserModel model)
+        {
+            var user = _IAccountService.GetUserDetailByPhoneNumber(model.PhoneNumber).FirstOrDefault();
+            if (model.PhoneNumber==user.PhoneNumber && model.Password==user.Password)
+            {
+                return Json(new { isStatus = true }, JsonRequestBehavior.AllowGet);
+            }
+            return Json(new { isStatus = false }, JsonRequestBehavior.AllowGet);
         }
     }
 

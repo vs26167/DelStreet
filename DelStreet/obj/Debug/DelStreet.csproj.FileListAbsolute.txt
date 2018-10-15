@@ -121,3 +121,5 @@ F:\DelStreet\DelStreet\bin\DataMapping.pdb
 F:\DelStreet\DelStreet\bin\Microsoft.Practices.Unity.dll
 F:\DelStreet\DelStreet\bin\Unity.Mvc5.dll
 F:\DelStreet\DelStreet\bin\Microsoft.Practices.Unity.xml
+F:\DelStreet\DelStreet\bin\DataAnnotationsExtensions.ClientValidation.dll
+F:\DelStreet\DelStreet\bin\DataAnnotationsExtensions.dll
